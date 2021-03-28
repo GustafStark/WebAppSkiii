@@ -1,0 +1,24 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <form method="post">
+        <label>Length</label>
+        <input type="text" id="lableLength" name="lableLength" required/>
+        <label>Age</label>
+        <input type="text"  id="lableAge" name="lableAge" required />
+        <label for="selectStyle">Välj stil:</label>
+        <select name="selectStyle">
+            <option value="Classic">Classic</option>
+            <option value="Freestyle">Free Style</option>
+        </select>
+        <br />
+        <input type="submit" value="Submit" />
+    </form>
+    <br />
+    <p>@ViewData["SizeOfSki"]</p>
+</div>
